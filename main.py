@@ -25,7 +25,7 @@ pages = loader.load_and_split()
 document = loader.load()
 # User input section
 with st.container():
-    user_input = st.text_area("Enter your question:", placeholder="Type your question here...", height=200)
+    user_input = st.text_area("Enter your question:", placeholder="Type your question here...", height=100)
     submit_button = st.button("Get Answer", type="primary")
 
 
@@ -44,7 +44,7 @@ if submit_button and user_input:
         response = llm.invoke(prompt)
         st.markdown("---")
         st.markdown("### 📝 Answer:")
-        st.markdown(f"```\n{response.content}\n```",height=400)
+        st.text_area("Response:", value=response.content, height=300)
         st.success("Response generated successfully!")
 elif submit_button and not user_input:
     st.warning("Please enter a question before submitting.")
