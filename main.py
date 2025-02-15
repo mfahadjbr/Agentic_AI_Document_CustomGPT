@@ -25,7 +25,7 @@ pages = loader.load_and_split()
 document = loader.load()
 # User input section
 with st.container():
-    user_input = st.text_area("Enter your question:", placeholder="Type your question here...", height=100)
+    user_input = st.text_area("Enter your question:", placeholder="Type your question here...", height=500)
     submit_button = st.button("Get Answer", type="primary")
 
 
