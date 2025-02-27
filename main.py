@@ -30,7 +30,7 @@ with st.container():
 
 
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", api_key="AIzaSyCMU3iF0KNaM8vp83_lfXnkycYGV-tKVsM")
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", api_key="AIzaSyAnccZ0sAKJaAiVT4vTpYgiqT_0BQ0rvQQ")
 prompt  =  f""" 
            You have to response  the user {user_input} according to the provided document 
            document {document},
